@@ -1,0 +1,94 @@
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: red;
+}
+.blank {
+	clear: both;
+}
+#Header1 {
+	width: 100%;
+	height: 500px;
+	background-color: white;
+	position: relative;
+}
+#Header1 img {
+	width: 100%;
+	height: 100%;
+}
+#Header1Font {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	opacity: 0.8;
+}
+#Header1 h3 {
+	color: blue;
+	position: absolute;
+	top: 5%;
+	left: 10%;
+}
+#Header1Menu {
+	position: absolute;
+	top: 5%;
+	right: 10%;
+}
+#Header1Menu li {
+	margin-left: 20px;
+	float: left;
+}
+#Header1Hello {
+	position: absolute;
+	top: 30%;
+	left: 10%;
+}
+#Header1Hello li {
+	font-size: 50px;
+}
+#Header1Hello span {
+	color: blue;
+}
+#Header2 {
+	width: 100%;
+	height: 300px;
+	background-color: white;
+}
+#Header2Content {
+	width: 60%;
+	height: 300px;
+	background-color: white;
+	display: inline-block;
+	float: left;
+	margin-top: 50px;
+}
+#Header2Content ul {
+	margin-left: 15%;
+}
+#Header2Content li {
+	margin-top: 20px;
+}
+#Header2a {
+	font-size: 30px;
+}
+#Header2 span {
+	color: blue;
+}
+#Header2Img {
+	width: 40%;
+	height: 300px;
+	background-color: blue;
+	display: inline-block;
+	margin-top: 50px;
+}
+#Header2Img img {
+	width: 100%;
+	height: 100%;
+}
+
