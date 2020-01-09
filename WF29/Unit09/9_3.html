@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button onclick="gotoGoogle()">Go to Google</button>
+	<button>Go to Zent</button>
+	<script type="text/javascript">
+		function gotoGoogle(){
+			window.location = "https://google.com";
+		}
+		function gotoZent(){
+			window.location = "https://portal.zent.asia";
+		}
+		var button = document.getElementsByTagName("button")[1];
+		button.addEventListener('click', gotoZent);
+	</script>
+</body>
+</html>

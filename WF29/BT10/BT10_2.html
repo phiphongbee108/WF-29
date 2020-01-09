@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="BT10_2.css">
+</head>
+<body>
+	<form action="a" name="frm">
+		Họ và tên <input type="text" name="name" placeholder="Nhập họ và tên....."> <span class="error"></span> <br>
+		Giới tính <input type="radio" name="gioitinh"> Nam <input type="radio" name="gioitinh"> Nữ <br>
+		Email <input type="email" name="email" placeholder="Nhập email....."> <span class="error"></span> <br>
+		Số điện thoại <input type="number" name="phone" placeholder="Nhập số điện thoại....."> <span class="error"></span> <br>
+		Mật khẩu <input type="password" name="password" placeholder="Nhập mật khẩu....."> <span class="error"></span> <br>
+		Xác nhận mật khẩu <input type="password" name="confirmpassword" placeholder="Nhập lại mật khẩu"> <span class="error"></span> <br>
+		<button>Đăng kí</button> <input type="submit" name="submit" value="Xóa trắng"> 
+	</form>
+	<script type="text/javascript">
+		var button = document.getElementsByTagName('button')[0];
+		button.addEventListener('click', function(event){
+			event.preventDefault();	
+			var name = document.frm.name;
+			var email = document.frm.email;
+			var phone = document.frm.phone;
+			var password = document.frm.password;
+			var confirmpassword = document.frm.confirmpassword;
+			if (name.value=="") {
+			name.nextElementSibling.innerHTML = "Tên không được để trống";
+			} else if(name.value.length < 8){
+				name.nextElementSibling.innerHTML = "Tên phải > 8 ký tự";
+			} else {
+				name.nextElementSibling.innerHTML = "";
+			}
+			
+			if (email.value=="") {
+				email.nextElementSibling.innerHTML = "Email không được để trống"
+			} else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(frm.email.value)) {
+				email.nextElementSibling.innerHTML = "";
+			} else {
+				email.nextElementSibling.innerHTML = "Email chưa đúng định dạng";
+			}
+
+			if (phone.value=="") {
+				phone.nextElementSibling.innerHTML = "Số điện thoại không được để trống"
+			} else if (/(09|01[2|6|8|9])+([0-9]{8})\b/g.test(frm.phone.value)) {
+				phone.nextElementSibling.innerHTML = "";
+			} else {
+				phone.nextElementSibling.innerHTML = "Số điện thoại chưa đúng định dạng";
+			}
+
+			if (password.value=="") {
+				password.nextElementSibling.innerHTML = "Mật khẩu không được để trống"
+			} else {
+				password.nextElementSibling.innerHTML = "";
+			}
+
+			if (confirmpassword.value=="") {
+				confirmpassword.nextElementSibling.innerHTML = "Nhập lại mật khẩu"
+			} else if (password.value != confirmpassword.value) {
+				confirmpassword.nextElementSibling.innerHTML = "";
+			} else {
+				confirmpassword.nextElementSibling.innerHTML = "Nhập lại mật khẩu sai";
+			}
+		})
+		
+		
+	</script>
+</body>
+</html>

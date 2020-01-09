@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input id="input1" type="text" name="">
+	<script type="text/javascript">
+		var input = document.getElementById('input1');
+		input1.addEventListener('blur', function(){
+			input1.value = input1.value.toUpperCase();
+		})
+		input1.addEventListener('focus', function(){
+			input1.style.background = 'red';
+		})
+	</script>
+</body>
+</html>
