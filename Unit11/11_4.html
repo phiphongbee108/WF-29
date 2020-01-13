@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../thuvien/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		div {
+			border: 1px solid black;
+		}
+		.active {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, illo.</div>
+	<button id="prepend">Prepend</button>
+	<button id="append">Append</button>
+	<button id="before">Before</button>
+	<button id="after">After</button>
+
+	<p>Lorem ipsum dolor sit amet.</p>
+	<button>AddClass</button><button>RemoveClass</button><button>ToggleClass</button>
+
+	<br><br><br>
+	<button id="clickme">Click me</button>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#prepend').on('click',function(){
+				$('div').prepend("Prepend");
+			})
+			$('#append').on('click',function(){
+				$('div').append("Append");
+			})
+			$('#before').on('click',function(){
+				$('div').before("Before");
+			})
+			$('#after').on('click',function(){
+				$('div').after("After");
+			})
+
+			$('button').eq(4).on('click',function(){
+				$('p').addClass('active');
+			})
+			$('button').eq(5).on('click',function(){
+				$('p').removeClass('active');
+			})
+			$('button').eq(6).on('click',function(){
+				$('p').toggleClass('active');
+			})
+
+			$('#clickme').on('click',function(){
+				$(this).after("<button id='test'>Vua sinh ra</button>");
+			})
+			$('body').on('click','#test',function(){
+				alert('ok');
+			})
+		})
+	</script>
+</body>
+</html>

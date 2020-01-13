@@ -1,0 +1,17 @@
+#main {
+	width: 40%;
+	height: 400px;
+	background-color: pink;
+}
+#frm2 {
+	display: none;
+}
+#frm3 {
+	display: none;
+}
+#frm4 {
+	display: none;
+}
+.error {
+	color: red;
+}
