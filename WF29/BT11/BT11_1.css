@@ -3,13 +3,10 @@
 	height: 400px;
 	background-color: pink;
 }
-#frm2 {
-	display: none;
+.active {
+	display: block;
 }
-#frm3 {
-	display: none;
-}
-#frm4 {
+.none {
 	display: none;
 }
 .error {

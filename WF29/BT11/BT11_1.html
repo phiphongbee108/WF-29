@@ -8,18 +8,51 @@
 </head>
 <body>
 	<div id="main">
-        <form action="" id="frm1">
+        <form action="" id="frm1" class="active">
+            Account information
+            <hr>
+            <br>
             User name* <br>
-            <input type="text" name="username"> <span class="error"></span>
+            <input type="text" name="" id="username"> <span class="error"></span> <br>
+            Password* <br>
+            <input type="password" name="" id="password"> <span class="error"></span>  <br>
+            Confirm Password* <br>
+            <input type="password" name="" id="confirmpassword"> <span class="error"></span> <br>
+            (*)Mandatory
         </form>
-        <form action="" id="frm2">2</form>
-        <form action="" id="frm3">3</form>
-        <form action="" id="frm4">4</form>
+        <form action="" id="frm2" class="none">2</form>
+        <form action="" id="frm3" class="none">3</form>
+        <form action="" id="frm4" class="none">4</form>
     </div>
     <br>
     <button>Next</button>
     <script type="text/javascript">
-        
+        $(document).ready(function(){
+            $('button').on('click',function(){
+                if($('#username').val()=="") {
+                    $('.error').eq(0).text('Ten khong duoc de trong');
+                }
+                else {
+                    $('.error').eq(0).text("");
+                }
+                if($('#password').val()=="") {
+                    $('.error').eq(1).text('Mat khau khong duoc de trong');
+                }
+                else {
+                    $('.error').eq(1).text("");
+                }
+                if($('#confirmpassword').val()=="") {
+                    $('.error').eq(2).text('Nhap lai mat khau');
+                }
+                else {
+                    $('.error').eq(2).text("");
+                }
+                $('#frm1').removeClass('.active');
+                $('#frm1').addClass('.none');
+                $('#frm2').removeClass('.none');
+                $('#frm2').addClass('.active')
+            })
+        })
     </script>
 </form>
 </body>
