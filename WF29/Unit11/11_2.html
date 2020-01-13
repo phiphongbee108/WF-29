@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../thuvien/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet.</p>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, sint.</div>
+	<input type="text" name="" id="name" value="1234">
+	<script type="text/javascript">
+		$('p').text("<a href='google.com'>The a</a>");
+		$('div').html("<a href='google.com'>The a</a>");
+		$('#name').val("nhap ho ten");
+		$('p').css('color','red');
+		$('div').css({'color':'blue','background':'pink'});
+		$('div').width('300px');
+		$('div').height('300px');
+		// $('div').empty();
+		// $('p').remove();
+	</script>
+</body>
+</html>

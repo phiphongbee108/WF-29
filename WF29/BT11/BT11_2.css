@@ -1,0 +1,9 @@
+.change {
+	width: 60%;
+	height: 200px;
+	background-color: pink;
+	display: none;
+}
+.active {
+	display: block;
+}

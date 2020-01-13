@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../thuvien/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="BT11_2.css">
+</head>
+<body>
+	<div>
+		<button class="clickme">+</button> <span>First Panel</span> 
+		<div class="change">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, animi!</div> <br>
+	</div>
+	<div>
+		<button class="clickme">+</button> <span>Second Panel</span> 
+		<div class="change">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, animi!</div> <br>
+	</div>
+	<div>
+		<button class="clickme">+</button> <span>Third Panel</span> 
+		<div class="change">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, animi!</div> <br>
+	</div>
+	<div>
+		<button class="clickme">+</button> <span>Fourth Panel</span> 
+		<div class="change">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, animi!</div> <br>
+	</div>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').on('click',function(){
+				$(this).text('-');
+				$('.change').toggleClass('active');
+			})
+		})
+	</script>
+</body>
+</html>

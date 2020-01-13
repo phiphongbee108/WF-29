@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../thuvien/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<p>1</p>
+	<p>2</p>
+	<div id="id" class="class">Lorem ipsum dolor sit amet.</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('p').css({'color':'red'});
+			$('#id').css({'color':'green'});
+			$('.class').css({'color':'blue'});
+		})
+	</script>
+</body>
+</html>
