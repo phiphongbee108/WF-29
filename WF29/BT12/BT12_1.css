@@ -1,0 +1,45 @@
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: red;
+}
+.blank {
+	clear: both;
+}
+.active {
+	display: block;
+}
+.none {
+	display: none;
+}
+
+
+#headBar {
+	width: 100%;
+	height: 150px;
+	background-color: #e64a4a;
+	position: absolute;
+}
+#menuBar {
+	width: 50%;
+	height: 150px;
+	position: relative;
+	left: 45%;
+}
+.menu {
+	float: left;
+	margin-left: 5%;
+}
+.submenu {
+	background-color: #e64a4a;
+	border-bottom: 1px solid white;
+}
+@media screen and (min-width: 480px) and (max-width: 720px) {
+	
+}
+
