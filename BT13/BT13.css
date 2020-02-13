@@ -1,0 +1,57 @@
+#topHeadBar {
+	background-image: url(img13/bg-masthead.jpg);
+	background-size: cover;
+	color: white;
+}
+#headler {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#headler p {
+	font-size: 50px;
+}
+#botHeadBar {
+	color: white;
+	text-align: center;
+}
+#botHeadBarContent {
+	padding-top: 50px;
+	font-size: 25px;
+}
+#topMainBar {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.titleMainBar {
+	font-size: 20px;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+#textBotMainBar {
+	font-size: 25px;
+	color: white;
+	padding-top: 50px;
+}
+#footer {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	#menuHeadBar {
+		display: none;
+	}
+}
+@media screen and (max-width: 575px) {
+	#menuHeadBar {
+		display: none;
+	}
+}
